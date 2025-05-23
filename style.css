@@ -26,12 +26,40 @@ h2 {
   padding-bottom: 5px;
 }
 
-.project {
+/* Style for the projects section */
+.projects article {
   background-color: white;
-  margin-bottom: 15px;
+  margin-bottom: 20px; /* Increased for better separation */
   padding: 15px;
   border-left: 5px solid #333;
   border-radius: 5px;
+}
+
+/* Style for images within articles */
+.projects article img {
+  width: 100%; /* Ensures all images take full container width */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Prevents extra space below images */
+  margin: 0 auto 15px; /* Centers image and adds consistent bottom margin */
+  border-radius: 3px; /* Optional: matches container's rounded corners */
+}
+
+/* Ensure consistent spacing for article text */
+.projects article p {
+  margin: 0; /* Removes default margins for cleaner spacing */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  main {
+    padding: 15px;
+  }
+  .projects article {
+    padding: 10px;
+  }
+  .projects article img {
+    margin-bottom: 10px;
+  }
 }
 
 footer {
